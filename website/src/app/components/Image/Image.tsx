@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 
 export const Image: React.FC<ImageProps> = ({ main }) => {
   return (
-    <div className='relative flex items-center justify-center h-32 w-32'>
+    <div className='relative flex items-center justify-center h-32 w-32 m-4'>
       <img
         src={main}
         alt={main}
