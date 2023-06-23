@@ -3,7 +3,7 @@ import { Card } from '../Card/Card';
 
 export const IntroCard = () => {
   return (
-    <div className='relative group'>
+    <div className='relative group ml-4 mt-16  w-96'>
       <div className='absolute inset-0 z-10 transition-opacity duration-500 ease-in group-hover:opacity-0'>
         <Card
           name='Din Song An Nguyen'
