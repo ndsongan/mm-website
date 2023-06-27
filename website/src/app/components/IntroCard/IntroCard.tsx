@@ -26,14 +26,15 @@ export const IntroCard = () => {
     'https://media3.giphy.com/media/dyjrpqaUVqCELGuQVr/giphy.gif';
   return (
     <div
-      className={`relative group  w-min-96  cursor-pointer ${
+      className={`relative group  w-min-96  ${
         isBouncing ? 'animate-bounce ease-in-out duration-5000' : ''
-      } rounded-xl shadow-xl backdrop-blur-sm`}
+      } rounded-xl shadow-xl  cursor-[url(https://assets.stickpng.com/images/5ede49f9b760540004f2c5e7.png),_pointer]`}
       onClick={handleClick}
       style={{
         backgroundImage: isClicked ? `url('${clickGif}}')` : 'none',
         backgroundPosition: 'center',
         backgroundSize: 'cover',
+        cursor: 'url(tanjiro_cur.webp), auto',
       }}
     >
       <div className='abslute inset-0 z-10 transition-opacity duration-500 ease-in group-hover:opacity-0'>
@@ -51,5 +52,6 @@ export const IntroCard = () => {
         />
       </div>
     </div>
+    // <div className='w-96 h-96 border-2   cursor-[url(https://img.icons8.com/?size=512&id=otuYOSexWmVT&format=png)] '></div>
   );
 };
