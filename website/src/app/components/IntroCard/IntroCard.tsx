@@ -25,31 +25,39 @@ export const IntroCard = () => {
   const secondImage =
     'https://media3.giphy.com/media/dyjrpqaUVqCELGuQVr/giphy.gif';
   return (
-    <div
-      className={`relative group  w-min-96  ${
-        isBouncing ? 'animate-bounce ease-in-out duration-5000' : ''
-      } rounded-xl shadow-xl  cursor-[url(https://assets.stickpng.com/images/5ede49f9b760540004f2c5e7.png),_pointer]`}
-      onClick={handleClick}
-      style={{
-        backgroundImage: isClicked ? `url('${clickGif}}')` : 'none',
-        backgroundPosition: 'center',
-        backgroundSize: 'cover',
-        cursor: 'url(tanjiro_cur.webp), auto',
-      }}
-    >
-      <div className='abslute inset-0 z-10 transition-opacity duration-500 ease-in group-hover:opacity-0'>
-        <Card
-          name='Din Song An Nguyen'
-          image={mainImage}
-          title='PhD Ohio State University'
-        />
-      </div>
-      <div className='absolute inset-0 z-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in'>
-        <Card
-          name='Gonpachiro Kamaboko'
-          image={secondImage}
-          title='Demon Slayer Corps'
-        />
+    <div className='flex justify-center items-center h-screen'>
+      <div
+        className={`relative group grid ${
+          isBouncing ? 'animate-bounce ease-in-out duration-5000' : ''
+        } rounded-xl shadow-xl cursor-pointer`}
+        onClick={handleClick}
+        style={{
+          backgroundImage: isClicked ? `url('${clickGif}')` : 'none',
+          backgroundPosition: 'center',
+          backgroundSize: 'cover',
+          cursor: 'url(tanjiro_cur.webp), auto',
+        }}
+      >
+        <div
+          className='transition-opacity duration-500 ease-in group-hover:opacity-0'
+          style={{ gridArea: '1 / 1 / 2 / 2', zIndex: isClicked ? 0 : 1 }}
+        >
+          <Card
+            name='Din Song An Nguyen'
+            image={mainImage}
+            title='PhD Ohio State University'
+          />
+        </div>
+        <div
+          className='opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in'
+          style={{ gridArea: '1 / 1 / 2 / 2', zIndex: isClicked ? 1 : 0 }}
+        >
+          <Card
+            name='Gonpachiro Kamaboko'
+            image={secondImage}
+            title='Demon Slayer Corps'
+          />
+        </div>
       </div>
     </div>
     // <div className='w-96 h-96 border-2   cursor-[url(https://img.icons8.com/?size=512&id=otuYOSexWmVT&format=png)] '></div>

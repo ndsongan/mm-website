@@ -11,7 +11,7 @@ export default function Home() {
         backgroundImage: `url('${pageBackground}')`,
       }}
     >
-      <div className='w-1/3'>
+      <div>
         <IntroCard />
       </div>
     </div>
