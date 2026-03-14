@@ -61,8 +61,8 @@ export default function Home() {
             </p>
             <p className="text-white/90 leading-relaxed">
               Before joining OSU, I received my B.A. in Computer Science and
-              Mathematics, <em>summa cum laude</em>, from Saint John's
-              University (CSBSJU). Feel free to reach out at{" "}
+              Mathematics, <em>summa cum laude</em>, from Saint John&apos;s
+              University (CSBSJU). Feel free to reach out at{' '}
               <a
                 href="mailto:nguyen.2687@buckeyemail.osu.edu"
                 className="text-blue-300 hover:underline"
