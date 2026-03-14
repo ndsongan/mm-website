@@ -12,7 +12,7 @@ export default function Home() {
       className="min-h-screen w-screen bg-cover bg-center text-white"
       style={{ backgroundImage: `url('${pageBackground}')` }}
     >
-      <div className="flex flex-col md:flex-row p-8">
+      <div className="flex flex-col md:flex-row gap-12 p-8">
         {/* Sidebar */}
         <aside className="w-72 shrink-0">
           <div className="sticky top-8">
@@ -38,7 +38,7 @@ export default function Home() {
         </aside>
 
         {/* Main content */}
-        <main className="w-full max-w-2xl backdrop-blur-sm bg-black/30 rounded-2xl p-8 ml-96">
+        <main className="flex-1 min-w-0 backdrop-blur-sm bg-black/30 rounded-2xl p-8">
           {/* About */}
           <section id="about" className="mb-12">
             <h2 className="text-2xl font-bold mb-4 border-b border-white/30 pb-2">
