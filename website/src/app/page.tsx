@@ -38,7 +38,7 @@ export default function Home() {
         </aside>
 
         {/* Main content */}
-        <main className="flex-1 min-w-0 backdrop-blur-sm bg-black/30 rounded-2xl p-8">
+        <main className="flex-1 min-w-0 max-w-3xl backdrop-blur-sm bg-black/30 rounded-2xl p-8">
           {/* About */}
           <section id="about" className="mb-12">
             <h2 className="text-2xl font-bold mb-4 border-b border-white/30 pb-2">
