@@ -1,12 +1,15 @@
 import { ImageProps } from './Image.props';
 import React from 'react';
-import NextImage from 'next/image';
+
+const BASE_PATH = process.env.NODE_ENV === 'production' ? '/mm-website' : '';
 
 export const Image: React.FC<ImageProps> = ({ main }) => {
+  const src = main.startsWith('http') ? main : `${BASE_PATH}${main}`;
   return (
     <div className='flex items-center justify-center m-4'>
-      <NextImage
-        src={main}
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src={src}
         alt='profile photo'
         width={200}
         height={200}
