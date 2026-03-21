@@ -1,7 +1,7 @@
 import { ImageProps } from './Image.props';
 import React from 'react';
 
-const BASE_PATH = process.env.NODE_ENV === 'production' ? '/mm-website' : '';
+const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
 
 export const Image: React.FC<ImageProps> = ({ main }) => {
   const src = main.startsWith('http') ? main : `${BASE_PATH}${main}`;
