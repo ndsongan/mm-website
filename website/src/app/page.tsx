@@ -9,7 +9,7 @@ export default function Home() {
 
   return (
     <div
-      className="min-h-screen w-screen bg-cover bg-center text-white"
+      className="min-h-screen w-full bg-cover bg-center text-white"
       style={{ backgroundImage: `url('${pageBackground}')` }}
     >
       <div className="flex flex-col md:flex-row gap-12 p-8">
